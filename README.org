@@ -1,0 +1,17 @@
+#+TITLE: A test React project
+
+A React project using [[https://webpack.js.org/][webpack 2]], babel, ES6
+
+#+BEGIN_SRC sh
+yarn add webpack webpack-dev-server path
+yarn add babel-loader babel-core babel-preset-es2015 babel-preset-react babel-preset-stage-3 --dev
+yarn add react react-dom
+yarn add babel-plugin-transform-runtime
+#+END_SRC
+
+
+#+BEGIN_SRC sh
+npm start
+#+END_SRC
+
+Access http://localhost:8080/
