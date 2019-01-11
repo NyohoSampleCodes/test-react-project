@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Something from './components/something.jsx';
-import TeX from './components/tex.jsx';
+import Something from './components/something';
+import TeX from './components/tex';
 
 ReactDOM.render(
   <div>
