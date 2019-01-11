@@ -14,7 +14,7 @@
     "stringstream": "^1.0.0",
     "tough-cookie": "^3.0.0",
     "webpack": "^4.28.4",
-    "webpack-dev-server": "^2.4.3"
+    "webpack-dev-server": "^3.1.14"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
