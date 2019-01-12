@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-const MathJax = require('react-mathjax');
+import MathJax  from 'react-mathjax';
 
 const texString = `\\zeta(s) := \\sum_{n=1}^\\infty n^{-s}`;
 
@@ -16,21 +16,21 @@ const componentToString = c => {
   return s;
 };
 
-const string = componentToString(<MathJax.Context><MathJax.Node>{texString}</MathJax.Node></MathJax.Context>);
+const string = componentToString(<MathJax.Provider><MathJax.Node formula={texString} /></MathJax.Provider>);
 
-export default class TeX extends React.Component {
+class TeX extends React.Component {
   render() {
     return (
       <div>
         <div>Direct component:</div>
-        <MathJax.Context>
-          <MathJax.Node>
-            {texString}
-          </MathJax.Node>
-        </MathJax.Context>
+        <MathJax.Provider>
+          <MathJax.Node formula={texString} />
+        </MathJax.Provider>
         <div>Component from string:</div>
         <div dangerouslySetInnerHTML={{__html: string}} />
       </div>
     );
   }
 }
+
+export default TeX
