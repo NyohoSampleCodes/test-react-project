@@ -8,7 +8,7 @@
     "forwarded": "^0.1.2",
     "lodash": "^4.17.11",
     "path": "^0.12.7",
-    "react": "^16.7.0",
+    "react": "^16.8.1",
     "react-dom": "^15.5.4",
     "sshpk": "^1.16.0",
     "stringstream": "^1.0.0",
