@@ -13,7 +13,7 @@
     "sshpk": "^1.16.0",
     "stringstream": "^1.0.0",
     "tough-cookie": "^3.0.0",
-    "webpack": "^4.28.4",
+    "webpack": "^4.33.0",
     "webpack-dev-server": "^2.4.3"
   },
   "devDependencies": {
