@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MathJax  from 'react-mathjax';
+import 'katex/dist/katex.min.css';
+import { InlineMath, BlockMath } from 'react-katex';
 import { renderToString } from 'react-dom/server';
 
 const texString = `\\zeta(s) := \\sum_{n=1}^\\infty n^{-s}`;
@@ -17,16 +18,14 @@ const componentToString = c => {
   return s;
 };
 
-const string = renderToString(<MathJax.Provider><MathJax.Node formula={texString} /></MathJax.Provider>);
+const string = renderToString(<div><BlockMath math={texString} /><InlineMath math={texString} /></div>);
 
 class TeX extends React.Component {
   render() {
     return (
       <div>
         <div>Direct component:</div>
-        <MathJax.Provider>
-          <MathJax.Node formula={texString} />
-        </MathJax.Provider>
+        <div><BlockMath math={texString} /><InlineMath math={texString} /></div>
         <div>Component from string:</div>
         <div dangerouslySetInnerHTML={{__html: string}} />
       </div>
