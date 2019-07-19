@@ -25,6 +25,7 @@
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "eslint": "^6.1.0",
+    "lodash": "^4.17.15",
     "tar": "^4.4.10",
     "webpack-dev-server": "^3.7.2"
   }
