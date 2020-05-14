@@ -12,9 +12,9 @@
     "lint": "eslint src"
   },
   "dependencies": {
+    "mathjax-full": "^3.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-mathjax": "^1.0.1",
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {

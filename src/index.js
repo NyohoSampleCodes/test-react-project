@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Something from './components/something';
-import TeX from './components/tex';
+import TeXComponent from './components/tex';
 
 ReactDOM.render(
   <div>
     <Something />
-    <TeX />
+    <TeXComponent />
   </div>,
   document.getElementById('root')
 );
