@@ -27,6 +27,6 @@
     "lodash": "^4.17.15",
     "tar": "^6.0.2",
     "webpack": "^4.43.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.2"
   }
 }
