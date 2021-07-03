@@ -23,7 +23,7 @@
     "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
-    "eslint": "^7.0.0",
+    "eslint": "^7.30.0",
     "lodash": "^4.17.15",
     "tar": "^6.0.2",
     "webpack": "^4.43.0",
