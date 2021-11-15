@@ -8,7 +8,11 @@ import { SVG } from 'mathjax-full/js/output/svg';
 import { browserAdaptor } from 'mathjax-full/js/adaptors/browserAdaptor';
 import { RegisterHTMLHandler } from 'mathjax-full/js/handlers/html';
 
-const texString = `\\zeta(s) := \\sum_{n=1}^\\infty n^{-s}`;
+const texString = `\\zeta(s) := \\sum_{n=1}^\\infty n^{-s}
+\\begin{align}
+{\\Huge にほんご} \\ f(x) 著作・制作 \\\\ \\hline
+\\end{align}
+`;
 
 const adaptor = browserAdaptor();
 RegisterHTMLHandler(adaptor);
